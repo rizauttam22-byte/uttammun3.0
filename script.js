@@ -5,9 +5,13 @@ const committees = [
       "Addressing the UN funding crisis arising from the United States' withdrawal from multilateral bodies.",
   },
   {
-    name: "UNHRC",
-    label: "UNHRC 
-      (Single/Double Delegation)",
+    <h3>
+  ${
+    committee.name === "UNHRC"
+      ? `UNHRC<br><span class="delegation-text">Single/Double Delegation</span>`
+      : (committee.label || committee.name)
+  }
+</h3>
     agenda:
       "Deliberation on the Human Rights situation of Uyghurs and other minorities in Xinjiang, in light of allegations of mass detention, surveillance, forced labour, and cultural suppression.",
   },
