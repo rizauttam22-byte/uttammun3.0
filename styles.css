@@ -68,7 +68,7 @@ p {
   .brand {
   display: flex;
   align-items: center;
-  gap: 0.7rem;
+  gap: 0.3rem;
   color: var(--gold-2);
   font-weight: 900;
   letter-spacing: 0.22em;
@@ -77,8 +77,8 @@ p {
 }
 
 .nav-logo {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
 }
 
