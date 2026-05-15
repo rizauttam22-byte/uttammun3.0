@@ -95,7 +95,13 @@ committeeGrid.innerHTML = committees
     (committee) => `
       <article class="committee-card">
         <div class="card-body">
-          <h3>${committee.label || committee.name}</h3>
+          <h3>
+  ${
+    committee.name === "UNHRC"
+      ? `UNHRC <span class="delegation-text">(Single/Double Delegation)</span>`
+      : (committee.label || committee.name)
+  }
+</h3>
           <p>${committee.agenda}</p>
         </div>
       </article>
