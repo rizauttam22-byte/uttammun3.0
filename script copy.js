@@ -6,7 +6,12 @@ const committees = [
   },
   {
     name: "UNHRC",
-    label: <>UNHRC <span className="text-xs">(Single/Double Delegation)</span></>,
+    <h3 className="text-xl font-bold">
+  {committee.name}
+  <span className="text-xs ml-1">
+    ({committee.labelType})
+  </span>
+</h3>
     agenda:
       "Deliberation on the Human Rights situation of Uyghurs and other minorities in Xinjiang, in light of allegations of mass detention, surveillance, forced labour, and cultural suppression.",
   },
